@@ -1,0 +1,83 @@
+.contact-section {
+    margin-top: 1rem;
+    min-height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    /* align-items: center; */
+    justify-content: center;
+    /* color: black; */
+    /* background-color: white; */
+    font-family: "Courier Prime", monospace;
+}
+
+.contact-container {
+    width: 100%;
+    /* background-color: green; */
+    color: white;
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 5vw;
+    text-decoration: underline;
+}
+
+.list-of-contacts {
+    padding: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-name {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    /* justify-content: space-around; */
+    
+}
+
+.contact-image {
+    margin: 0.5rem 0rem;
+    height: 4rem;
+    width: auto;
+}
+
+.contact-image-github {
+    margin: 0.5rem 0rem;
+    height: 4rem;
+    width: auto;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.contact-text {
+    margin: 1rem 1rem;
+}
+
+.contact-link {
+    color:lightblue
+}
+
+@media screen and (max-width: 600px) {
+    .contact-heading {
+        font-size: 15vw;
+    }
+
+    .contact-name {
+        font-size: 4vw;
+    }
+
+    .contact-image {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .contact-image-github {
+        width: 10vw;
+        height: 10vw;
+    }
+}

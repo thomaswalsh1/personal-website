@@ -1,0 +1,140 @@
+.home-section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    /* position: fixed; */
+    margin-top: 6vh;
+}
+
+.text-content {
+    font-family: "Courier Prime", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    max-width: 50%;
+    flex: 1;
+}
+
+.carousel-wrapper {
+    background-color: blue;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure no overflow */
+    flex: 1;
+}
+
+.carousel-container {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    width: 300%; /* 100% per image * 3 images */
+    animation: sliding 12s infinite;
+    transition: transform 0.5s ease;
+}
+
+.carousel div {
+    flex: 0 0 100%; /* Ensures each image takes up 100% of the container's width */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+.image-one {
+    background-image: url("../../assets/IMG_0608.png");
+}
+
+.image-two {
+    background-image: url("../../assets/me.jpg");
+}
+
+.image-three {
+    background-image: url("../../assets/IMG_3089.jpeg");
+}
+
+/* Updated sliding keyframes for three images */
+@keyframes sliding {
+    0% {
+        transform: translateX(0%);
+    }
+    33.333% {
+        transform: translateX(0%);
+    }
+    44.444% {
+        transform: translateX(-100%);
+    }
+    77.777% {
+        transform: translateX(-100%);
+    }
+    88.888% {
+        transform: translateX(-200%);
+    }
+
+    99% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.welcome-body-heading {
+    font-size: 4em;
+    color: white;
+}
+
+.welcome-body-text {
+    font-size: 2em;
+    color: white;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+    .home-section {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow the section height to adjust to its content */
+    }
+
+    .text-content {
+        max-width: 100%; /* Full width on mobile */
+        padding: 10px;
+    }
+
+    .carousel-wrapper {
+        background-color: red;
+        width: 100vw;
+        min-height: 400px;
+    }
+
+    .carousel-container {
+        min-height: 400px;
+    }
+    
+    .carousel {
+        min-height: 400px;
+
+        div {
+            min-height: 400px;
+        }
+    }
+
+
+}

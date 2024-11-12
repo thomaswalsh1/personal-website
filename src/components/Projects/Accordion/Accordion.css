@@ -1,0 +1,54 @@
+.container {
+    vertical-align: center;
+    min-width: 100%;
+    height: auto;
+    font-family: "Courier Prime", monospace;
+}
+
+.wrapper {
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.wrapper .project-name-container {
+    width: 100%;
+    text-align: left;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper .project-name-container.active {
+    color:green;
+}
+
+.wrapper .about-project-container {
+    color:white;
+    padding: 0 1rem;
+    transition: height .2s ease-in-out;
+}
+  
+.wrapper .project-name-content {
+    font-family: "Courier Prime", monospace;
+}
+
+.wrapper .about-project-content {
+    padding: 1rem 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.wrapper .github-project-link {
+    font-size: 1.3rem;
+    color: lightblue;
+}
+
+span {
+    color:white;
+}

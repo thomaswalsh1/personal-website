@@ -1,0 +1,110 @@
+.about-section {
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    /* align-items: center; */
+    justify-content: center;
+    color:white;
+    font-family: "Courier Prime", monospace;
+}
+
+.about-container {
+    margin-top: 10rem;
+    min-width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-heading {
+    text-decoration: underline;
+    font-size: 5vw;
+    margin-bottom: 5%;
+}
+
+.about-body {
+    font-size: x-large;
+    padding: 0 10%;
+}
+
+.skills-body {
+    font-size: x-large;
+    padding: 0 10%;
+}
+
+.skills-container {
+    margin-top: 10rem;
+    /* background-color: red; */
+    min-width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.skills-table {
+    border: 1px solid white;
+    width: 100%;
+    text-align: left;
+    /* display: inline; */
+    align-items: center;
+}
+
+.skills-table th {
+    width: 30%;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.skills-table td {
+    vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        margin-top: 0;
+    }
+
+    .about-container {
+        margin: 1rem 0rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .about-heading {
+        font-size: 15vw;
+    }
+
+    .about-body {
+        font-size: large;
+    }
+
+    .skills-container {
+        margin-top: 2rem;
+    }
+
+    .skills-body {
+        min-width: 100vw;
+        padding: 0;
+    }
+
+    .skills-table td{
+        /* min-width: 10vw; */
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 1376px) {
+    .about-section {
+        flex-direction: column;
+    }
+}
