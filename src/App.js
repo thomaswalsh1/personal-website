@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Splash from './Splash';
+import './App.css';
 
 function App() {
   
