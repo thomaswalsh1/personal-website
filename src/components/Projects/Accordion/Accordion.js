@@ -4,23 +4,23 @@ import './Accordion.css';
 const data = [
     {
         project: 'ThomasHelper',
-        about: 'Proident laborum cupidatat dolore qui non occaecat dolor reprehenderit in anim quis eu. Id enim id in veniam sint est occaecat exercitation adipisicing non excepteur reprehenderit eu fugiat. Do elit excepteur voluptate culpa esse eiusmod aute id. Nisi incididunt sunt pariatur sit laborum ex et nostrud velit non veniam.',
+        about: 'ThomasHelper is a desktop GUI application that performs a variety of actions such as opening all browser tabs related to schoolwork or running its own built-in To-Do list application. I created ThomasHelper using Java, Swing, JavaFX, and other tools. ',
         link: 'https://github.com/thomaswalsh1/ThomasHelper'
     },
     {
         project: 'Climate Diplomacy Game Theory Simulation',
-        about: 'Proident laborum cupidatat dolore qui non occaecat dolor reprehenderit in anim quis eu. Id enim id in veniam sint est occaecat exercitation adipisicing non excepteur reprehenderit eu fugiat. Do elit excepteur voluptate culpa esse eiusmod aute id. Nisi incididunt sunt pariatur sit laborum ex et nostrud velit non veniam.',
+        about: 'The Climate Diplomacy Game Theory Simulation is a project I created as part of the ICons program at UMass Amherst. This project was created in Python to analyze and simulate climate diplomacy using various parameters and concepts of game theory.',
         link: 'https://www.linkedin.com/posts/twalsh23_icons-case-study-activity-7199406971911880704-T-S9?utm_source=share&utm_medium=member_desktop'
     },
     {
         project: 'IBM FullStack Developer Capstone',
-        about: 'Proident laborum cupidatat dolore qui non occaecat dolor reprehenderit in anim quis eu. Id enim id in veniam sint est occaecat exercitation adipisicing non excepteur reprehenderit eu fugiat. Do elit excepteur voluptate culpa esse eiusmod aute id. Nisi incididunt sunt pariatur sit laborum ex et nostrud velit non veniam.',
+        about: 'The IBM Full Stack Developer Capstone is a project that I completed as part of the IBM Full Stack Developer Professional Certification. This project is a mock dealership website created using Django, React, MongoDB, and other libraries and tools. The website also implements microservices with the use of an AI Sentiment Analyzer provided by IBM. It is also capable of deployment using Docker and Kubernetes. ',
         link: 'https://github.com/thomaswalsh1/xrwvm-fullstack_developer_capstone'
     },
     {
         project: 'Portfolio Website (here!)',
-        about: 'Proident laborum cupidatat dolore qui non occaecat dolor reprehenderit in anim quis eu. Id enim id in veniam sint est occaecat exercitation adipisicing non excepteur reprehenderit eu fugiat. Do elit excepteur voluptate culpa esse eiusmod aute id. Nisi incididunt sunt pariatur sit laborum ex et nostrud velit non veniam.',
-        link: 'null'
+        about: 'This is my portfolio website. I created my portfolio website using CSS, HTML, Javascript, React, and some other tools. I deployed this website on Cloudflare and tested it on browsers such as Chrome, Firefox, and Safari on a variety of different screen sizes.',
+        link: 'https://github.com/thomaswalsh1/personal-website'
     },
     {
         project: 'SuperAI',

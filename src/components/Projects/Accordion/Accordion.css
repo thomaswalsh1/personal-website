@@ -25,7 +25,7 @@
 }
 
 .wrapper .project-name-container.active {
-    color:green;
+    /* color:green; */
 }
 
 .wrapper .about-project-container {
@@ -46,6 +46,7 @@
 
 .wrapper .github-project-link {
     font-size: 1.3rem;
+    padding: 1rem 0;
     color: lightblue;
 }
 
