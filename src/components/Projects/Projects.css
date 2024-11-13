@@ -58,6 +58,10 @@
     .projects-about-heading {
         font-size: 15vw;
     }
+
+    .projects-about-body {
+        font-size: large;
+    }
     
 
 }
