@@ -82,6 +82,10 @@
     }
 
     .contact-text {
-        font-size: x-small;
+        font-size: medium;
+    }
+
+    .contact-link {
+        font-size: small;
     }
 }
