@@ -2,26 +2,38 @@ import React, { useState, useEffect } from 'react';
 import './Navi.css';
 import T from '../../assets/T.png';
 import drop from '../../assets/dropdown.jpg';
-import { Link, scrollTo } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 function Navi() {
     const [showMenu, setShowMenu] = useState(false);
 
-    var prevScrollpos = window.scrollY;
-    window.onscroll = function () {
-        var currentScrollPos = window.scrollY;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-100%";
+    useEffect(() => {
+
+        let prevScrollPos = window.scrollY; 
+
+        const handleScroll = () => {
+            let currentScrollPos = window.scrollY;
+
+            const navbar = document.getElementById("navbar");
+
+            if (currentScrollPos >= 0 && currentScrollPos <= 70) {
+                navbar.style.top = "0";
+            } else if (prevScrollPos > currentScrollPos) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-100%";
+            }
+            prevScrollPos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-    }
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+        
 
     return (
         <div className='navbar-container' id='navbar'>
             <div className='logo-text'>
-                <img src={T} className='logo-image' />
+                <img src={T} className='logo-image' alt="Logo" />
                 <span>homas Walsh</span>
             </div>
             <div className='nav-buttons'>
@@ -32,7 +44,7 @@ function Navi() {
                 <Link className='nav-button' to='contact-section' spy={true} smooth={true}>Contact</Link>
             </div>
 
-            <img src={drop} className={`mobile-dropdown ${showMenu ? 'rotate' : ''}`} onClick={() => setShowMenu(!showMenu)} />
+            <img src={drop} alt="dropdown" className={`mobile-dropdown ${showMenu ? 'rotate' : ''}`} onClick={() => setShowMenu(!showMenu)} />
             <div className={`mobile-nav-buttons ${showMenu ? 'show' : ''}`}>
                 <Link className='mobile-nav-button' href='/' onClick={() => setShowMenu(!showMenu)} to='home-section' spy={true} smooth={true}>Home</Link>
                 <Link className='mobile-nav-button' href='/' onClick={() => setShowMenu(!showMenu)} to='about-section' spy={true} smooth={true}>About</Link>
