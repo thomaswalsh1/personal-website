@@ -9,7 +9,8 @@
     justify-content: center;
     /* color: black; */
     /* background-color: white; */
-    font-family: "Courier Prime", monospace;
+    /* font-family: "Courier Prime", monospace; */
+    font-family: "News Cycle", serif
 }
 
 .contact-container {
@@ -21,7 +22,8 @@
 
 .contact-heading {
     font-size: 5vw;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: green;
 }
 
 .list-of-contacts {

@@ -14,6 +14,10 @@
     animation: slideOut 2s 2s forwards;
 }
 
+.splash::-webkit-scrollbar {
+    display: none
+}
+
 @keyframes slideOut {
     0% {
         transform: translateX(0);
@@ -46,7 +50,10 @@
     max-width: 0;
     align-items: center;
     /* background-color: red; */
-    font-family: 'Courier Prime', monospace;
+    /* font-family: 'Courier Prime', monospace;
+     */
+     
+    font-family: "News Cycle", serif;
     /* padding-left: 8px; */
     font-size: 2rem;
     overflow-x: hidden;

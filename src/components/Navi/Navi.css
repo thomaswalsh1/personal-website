@@ -1,7 +1,7 @@
 .navbar-container {
     height: 4vh;
     max-width: 100vw;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid green;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -18,8 +18,15 @@
 }
 
 .logo-text {
-    min-width: 15vw;
-    flex-grow: 1;
+    width: 20vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.logo-text-pushback {
+    width: 20vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
@@ -35,7 +42,8 @@
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    font-family: "Courier Prime", monospace;
+    /* font-family: "Courier Prime", monospace; */
+    font-family: "News Cycle", serif;
     /* background-color: blue; */
 }
 
@@ -44,7 +52,14 @@
 }
 
 .nav-button:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    animation: color-changing 1s infinite
+}
+
+@keyframes color-changing {
+    0% { color: white; } 
+    50% { color: green; }
+    100% { color: white; }
 }
 
 .logo-text span {
@@ -56,7 +71,7 @@
     height: 3rem;
     /* border: 1px solid white; */
     border-radius: 10px;
-    margin-right: 2%;
+    /* margin-right: 2%; */
     animation: rotate 1s ease 1s 1;
 }
 
@@ -73,7 +88,7 @@
     height: 3rem;
     /* border: 1px solid white; */
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
     display: none;
 }
 
@@ -83,10 +98,11 @@
 
 .mobile-nav-buttons {
     overflow: hidden;
+    border: 1px solid green;
     max-height: 0;
     display: flex;
     flex-direction: column;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.4s ease-in-out;
     background-color: black;
     position: absolute;
     left: 0;
@@ -102,30 +118,37 @@
 }
 
 .mobile-nav-button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 2%;
     color: white;
     text-decoration: none;
-    font-family: "Courier Prime", monospace;
+    font-family: "News Cycle", serif;
 }
 
+.mobile-nav-button:hover {
+    /* text-decoration: underline; */
+    animation: color-changing 1s infinite
+}
+
+
 .hidden {
-    display:none;
+    display: none;
 }
 
 @media screen and (max-width: 600px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .mobile-dropdown{
         display: flex;
-        position: relative;
-        left: 23vw;
-        margin-right: 1rem;
     }
 
     .nav-buttons {
         display: none;
     }
 
-    .logo-text {
-        
+    .logo-text-pushback{
+        display: none;
     }
 }

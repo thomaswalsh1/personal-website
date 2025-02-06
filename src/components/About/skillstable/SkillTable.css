@@ -1,0 +1,84 @@
+#skilltable-body {
+    border: 1px solid green;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: fit-content;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
+}
+
+/* .skilltable-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    height: fit-content;
+    border-top: hidden;
+}
+
+.skilltable-heading-item {
+    justify-content: center;
+    display: flex;
+    border: 1px solid green;
+    flex: 1;
+} */
+
+.skilltable-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.skilltable-content-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* justify-content: center; */
+}
+
+.skilltable-content-header {
+    width: 100%;
+    display: flex;
+    border: 1px solid green;
+    border-top: 0px;
+    justify-content: center;
+}
+
+.first {
+    border-top: 0px;
+}
+
+.skilltable-content-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 600px) {
+    .skilltable-content { 
+        flex-direction: column;       
+    }
+
+    .skilltable-content-header {
+        border-top: 1px solid green;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .first {
+        border-top: 0px;
+    }
+
+    .skilltable-content-list {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}

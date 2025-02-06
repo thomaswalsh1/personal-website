@@ -8,7 +8,8 @@
 }
 
 .text-content {
-    font-family: "Courier Prime", monospace;
+    font-family: "News Cycle", serif;
+    /* font-family: "Courier Prime", monospace; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +17,10 @@
     padding: 5%;
     max-width: 50%;
     flex: 1;
+}
+
+.text-content > .welcome-body-heading {
+    color: green;
 }
 
 .carousel-wrapper {

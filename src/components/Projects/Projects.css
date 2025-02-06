@@ -8,7 +8,8 @@
     /* align-items: center; */
     justify-content: center;
     color:white;
-    font-family: "Couerier Prime", monospace;
+    /* font-family: "Couerier Prime", monospace; */
+    font-family: "News Cycle", serif;
 }
 
 .projects-about {
@@ -23,7 +24,6 @@
 }
 
 .projects-accordion-container {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,8 +32,18 @@
     min-height: 100%;
 }
 
+.projects-accordion-wrapper {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+
 .projects-about-heading {
-    text-decoration: underline;
+    /* text-decoration: underline;  */
+    color: green;
     font-size: 5vw;
     margin-bottom: 5%;
     /* font-size: x-large; */

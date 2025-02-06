@@ -53,8 +53,9 @@ function Navi() {
                 <Link className='mobile-nav-button' href='/' onClick={() => setShowMenu(!showMenu)} to='contact-section' spy={true} smooth={true}>Contact</Link>
             </div>
 
-            <div className='logo-text'>
+            <div className='logo-text-pushback'>
                 {/* This is just for the navbar being centered */}
+                
             </div>
         </div>
     )

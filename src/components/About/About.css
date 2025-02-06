@@ -7,7 +7,8 @@
     /* align-items: center; */
     justify-content: center;
     color:white;
-    font-family: "Courier Prime", monospace;
+    /* font-family: "Courier Prime", monospace; */
+    font-family: "News Cycle", serif;
 }
 
 .about-container {
@@ -20,7 +21,8 @@
 }
 
 .about-heading {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: green;
     font-size: 5vw;
     margin-bottom: 5%;
 }
@@ -35,27 +37,32 @@
     padding: 0 10%;
 }
 
+/* .table-header {
+    color: green;
+} */
+
 .skills-container {
     margin-top: 10rem;
-    /* background-color: red; */
     min-width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
-    text-align:center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 .skills-table {
-    border: 1px solid white;
+    border: 1px solid green;
     width: 100%;
     text-align: left;
-    /* display: inline; */
     align-items: center;
 }
 
 .skills-table th {
     width: 30%;
     border: 1px solid white;
+    border-top: hidden;
     text-align: center;
 }
 

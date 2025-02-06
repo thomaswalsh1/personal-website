@@ -1,31 +1,32 @@
-import React from 'react';
-import './About.css';
+import React from 'react'
+import './About.css'
+import SkillTable from './skillstable/SkillTable'
 
-function About() {
-    return (
-        <section className='about-section'>
-            <div className='about-container'>
-                <span className='about-heading'>
-                    About Me
-                </span>
-                <br></br>
-                <span className='about-body'>
-                Welcome to my website! My name is Thomas Walsh, and I’m a computer science student at UMass Amherst as a member of the class of 2027. I have been interested in computer science and programming since I was little, as my first experience programming was developing video games. My current goal is to become a software or web developer with the skills to create easy-to-use applications accessible to everyone.
-
-                </span>
-            </div>
-            <div className='skills-container'>
-            <span className='about-heading'>
-                    Skills
-                </span>
-                <br></br>
-                <span className='skills-body' id="skills-section">
+function About () {
+  return (
+    <section className='about-section'>
+      <div className='about-container'>
+        <span className='about-heading'>About Me</span>
+        <br></br>
+        <span className='about-body'>
+          Welcome to my website! My name is Thomas Walsh, and I’m a computer
+          science student at UMass Amherst as a member of the class of 2027. I
+          have been interested in computer science and programming since I was
+          little, as my first experience programming was developing video games.
+          My current goal is to become a software or web developer with the
+          skills to create easy-to-use applications accessible to everyone.
+        </span>
+      </div>
+      <div className='skills-container'>
+        <span className='about-heading'>Skills</span>
+        <br></br>
+        <SkillTable />
+        {/* <span className='skills-body' id="skills-section">
                     <table className='skills-table'>
                         <tr>
                             <th>Front-End</th>
                             <th>Back-End</th>
                             <th>Other</th>
-                        
                         </tr>
                         <tr className='row-of-skills'>
                             <td>
@@ -67,8 +68,9 @@ function About() {
                             </td>
                         </tr>
                     </table>
-                </span>
-            </div>
-        </section>
-    )
-} export default About;
+                </span> */}
+      </div>
+    </section>
+  )
+}
+export default About

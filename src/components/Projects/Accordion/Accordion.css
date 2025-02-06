@@ -2,11 +2,12 @@
     vertical-align: center;
     min-width: 100%;
     height: auto;
-    font-family: "Courier Prime", monospace;
+    /* font-family: "Courier Prime", monospace; */
+    font-family: "News Cycle", serif;
 }
 
 .wrapper {
-    border: 1px solid white;
+    border: 1px solid green;
     overflow: hidden;
 }
 
@@ -15,6 +16,7 @@
     text-align: left;
     padding: 20px 10px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     font-weight: 500;
@@ -35,7 +37,25 @@
 }
   
 .wrapper .project-name-content {
-    font-family: "Courier Prime", monospace;
+    /* font-family: "Courier Prime", monospace; */
+    width: 80%;
+    font-family: "News Cycle", serif;
+}
+
+.wrapper .project-name-dropdown { 
+    width: 20%;
+    /* padding: 1rem; */
+}
+
+.wrapper .dropdown-turned {
+    transform: rotate(-90deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.wrapper .dropdown-not-turned {
+    /* Shouldn't be shown due to splash animation  */
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in-out;
 }
 
 .wrapper .about-project-content {
