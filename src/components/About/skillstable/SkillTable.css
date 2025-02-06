@@ -10,29 +10,11 @@
     /* margin-right: 2rem; */
 }
 
-/* .skilltable-heading {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid green;
-    height: fit-content;
-    border-top: hidden;
-}
-
-.skilltable-heading-item {
-    justify-content: center;
-    display: flex;
-    border: 1px solid green;
-    flex: 1;
-} */
-
 .skilltable-content {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .skilltable-content-item {
@@ -45,6 +27,7 @@
 .skilltable-content-header {
     width: 100%;
     display: flex;
+    font-size: x-large;
     border: 1px solid green;
     border-top: 0px;
     justify-content: center;
@@ -59,17 +42,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+    font-size: x-large;
 }
 
 @media screen and (max-width: 600px) {
-    .skilltable-content { 
-        flex-direction: column;       
+    .skilltable-content {
+        flex-direction: column;
     }
 
     .skilltable-content-header {
         border-top: 1px solid green;
         border-left: 0px;
         border-right: 0px;
+        font-size: large;
     }
 
     .first {
@@ -77,8 +62,6 @@
     }
 
     .skilltable-content-list {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
+        font-size: large;
     }
 }

@@ -32,6 +32,11 @@ const data = [
     about:
       'My team’s submission for HackUMass XII, SuperAI is a website designed to provide users with an easy method of switching between different LLMs as well as gathering analytics. Upon entering a prompt, the prompt will be passed to four different LLMs and SuperAI’s backend API will analyze these responses for completeness, correctness, relevance, coherence, and a final aggregate score for each LLM. We created SuperAI using Javascript, Typescript, CSS, Tailwind, Svelte, Sveltekit, FastAPI, HTML, Groq, Huggingface, Cloudflare and other tools.',
     link: 'https://github.com/thomaswalsh1/super-ai'
+  },
+  {
+    project: 'Vent',
+    about: "Vent is a social media platform I created to revitalize the 2000s era of blogging and journalism. Built using Vite + React, Express, MongoDB, Vercel and other tools, Vent is one of my favorite projects to date. Note: The backend repository can be found on my Github profile.",
+    link: "https://github.com/thomaswalsh1/Vent-App-Frontend"
   }
 ]
 

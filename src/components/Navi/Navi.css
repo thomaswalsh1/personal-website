@@ -9,8 +9,8 @@
     align-items: center;
     color: white;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     right: 0;
     z-index: 3;
     background-color: black;
@@ -19,7 +19,7 @@
 
 .logo-text {
     width: 20vw;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
     /* background-color: green; */
@@ -27,7 +27,7 @@
 
 .logo-text-pushback {
     width: 20vw;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
     /* background-color: green; */
@@ -48,18 +48,28 @@
 }
 
 .nav-button {
+    cursor: pointer;
     display: flex;
 }
 
 .nav-button:hover {
     /* text-decoration: underline; */
-    animation: color-changing 1s infinite
+    animation: color-changing 1s infinite;
+    cursor: pointer;
 }
 
 @keyframes color-changing {
-    0% { color: white; } 
-    50% { color: green; }
-    100% { color: white; }
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: green;
+    }
+
+    100% {
+        color: white;
+    }
 }
 
 .logo-text span {
@@ -78,7 +88,9 @@
 @keyframes rotate {
     from {
         transform: rotate(0deg);
-    } to {
+    }
+
+    to {
         transform: rotate(360deg);
     }
 }
@@ -109,7 +121,7 @@
     top: calc(4vh + 2rem);
     /* border: 1px solid white; */
     min-width: calc(100% - 2px);
-    
+
 }
 
 .mobile-nav-buttons.show {
@@ -139,8 +151,8 @@
         display: flex;
         justify-content: space-between;
     }
-    
-    .mobile-dropdown{
+
+    .mobile-dropdown {
         display: flex;
     }
 
@@ -148,7 +160,7 @@
         display: none;
     }
 
-    .logo-text-pushback{
+    .logo-text-pushback {
         display: none;
     }
 }

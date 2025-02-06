@@ -5,12 +5,17 @@ import email from '../../assets/email_logo.png';
 import phone from '../../assets/icons8-phone-48.png';
 import github from '../../assets/github_logo.png';
 import xLogo from '../../assets/x_logo.png';
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Contact() {
     return(
         <section className='contact-section'>
             <div className='contact-container'>
-                <span className='contact-heading'>Contact</span>
+                {/* <span className='contact-heading'>Contact</span>
                 <div className='list-of-contacts'>
                     <span className='contact-name'>
                         <img className='contact-image' src={email} /> <p className='contact-text'>Email: </p> <a className='contact-link' href='mailto:thomasmwalsh217@gmail.com'>thomasmwalsh217@gmail.com</a>
@@ -27,6 +32,23 @@ function Contact() {
                     <span className='contact-name'>
                         <img className='contact-image' src={xLogo} /> <p className='contact-text'>X:</p> <a className='contact-link' href='https://x.com/twalshdev'>x.com/twalshdev</a>
                     </span>
+                </div> */}
+                <div className='section-of-contacts'>
+                    <a className='contact email' href='mailto:thomasmwalsh217@gmail.com'>
+                        <MdOutlineMailOutline className='contact-visual'/>
+                    </a>
+                    <a className='contact phone' href='tel: 781-605-5122'>
+                        <FaPhoneSquareAlt className='contact-visual'/>
+                    </a>
+                    <a className='contact github' href='https://github.com/ThomasWalsh1' >
+                        <FaGithub className='contact-visual'/>
+                    </a>
+                    <a className='contact linkedin' href='https://www.linkedin.com/in/twalsh23/'>
+                        <FaLinkedin className='contact-visual'/>
+                    </a>
+                    <a className='contact twitter' href='https://x.com/twalshdev'>
+                        <FaSquareXTwitter className='contact-visual'/>
+                    </a>
                 </div>
             </div>
         </section>

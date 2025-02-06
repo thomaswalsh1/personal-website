@@ -19,56 +19,12 @@ function About () {
       </div>
       <div className='skills-container'>
         <span className='about-heading'>Skills</span>
+        <span className='about-body' style={{ marginBottom: "3rem"}}>
+          As a continuous learner, I have picked up many skills in software and web development.
+          Here are some of the well-known libraries and tools I have used when creating applications.
+        </span>
         <br></br>
         <SkillTable />
-        {/* <span className='skills-body' id="skills-section">
-                    <table className='skills-table'>
-                        <tr>
-                            <th>Front-End</th>
-                            <th>Back-End</th>
-                            <th>Other</th>
-                        </tr>
-                        <tr className='row-of-skills'>
-                            <td>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>SCSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Typescript</li>
-                                    <li>React</li>
-                                    <li>Bootstrap</li>
-                                    <li>Tailwind</li>
-                                    <li>Django</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>MongoDB</li>
-                                    <li>SQL</li>
-                                    <li>Kubernetes</li>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>Flask</li>
-                                    <li>Microservices</li>
-                                    <li>Serverless</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>Postman</li>
-                                    <li>Linux</li>
-                                    <li>Windows</li>
-                                    <li>MacOS</li>
-                                    <li>Powerpoint</li>
-                                    <li>G-Suite</li>
-                                    <li>Cloud Computing</li>
-                                    <li>Excel</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </span> */}
       </div>
     </section>
   )
