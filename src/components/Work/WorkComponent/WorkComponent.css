@@ -189,7 +189,7 @@
     }
 
     .wc-selection-line-ball {
-        top: calc(1rem + 2px); 
+        top: calc(0.7rem); 
         transition: left 0.5s ease-in-out; 
     }
 
