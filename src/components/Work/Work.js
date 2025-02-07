@@ -1,6 +1,6 @@
 import React from 'react'
 import './Work.css'
-import WorkCarousel from './WorkCarousel/WorkCarousel'
+import WorkComponent from './WorkComponent/WorkComponent'
 
 function Work() {
   return (
@@ -11,7 +11,7 @@ function Work() {
             </div>
         </div>
         <div className='work-body-container'>
-            <WorkCarousel />
+            <WorkComponent />
         </div>
     </section>
   )

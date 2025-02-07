@@ -218,4 +218,9 @@
     .contact-link {
         font-size: small;
     }
+
+    .contact-visual {
+        width: 2rem;
+        height: 2rem;
+    }
 }

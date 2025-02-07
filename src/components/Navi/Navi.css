@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 18;
     background-color: black;
     transition: top 0.3s;
 }

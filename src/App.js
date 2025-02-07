@@ -12,6 +12,7 @@ import './App.css';
 function App() {
   
   const [splashVisible, setSplashVisible] = useState(true);
+  const [showScrollbar, setShowScrollbar] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,8 +21,16 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // show scrollbar after 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowScrollbar(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
+    <div className={`App ${!showScrollbar ? "HideAppBar" : "" }`}>
       {splashVisible && <Splash />}
       <Navi />
       <Home />

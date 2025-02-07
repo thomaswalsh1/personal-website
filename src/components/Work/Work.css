@@ -18,17 +18,15 @@
 .work-heading {
     color: green;
     font-size: 4rem;
+    margin-bottom: 5%;
 }
 
 .work-body-container {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
 }
 
-
-@media screen and (max-width: 600px) {
-    
-}
 

@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 20;
     animation: slideOut 2s 2s forwards;
 }
 
